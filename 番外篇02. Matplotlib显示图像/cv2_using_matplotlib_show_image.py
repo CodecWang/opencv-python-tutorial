@@ -1,4 +1,5 @@
-# More: http://ex2tron.top
+# ex2tron's blog:
+# http://ex2tron.wang
 
 import cv2
 import matplotlib.pyplot as plt
@@ -22,4 +23,15 @@ plt.subplot(122)
 plt.xticks([]), plt.yticks([])  # 隐藏x和y轴
 plt.imshow(img2)
 
+plt.show()
+
+
+# 3.加载和保存图片
+import matplotlib.image as pli
+
+img = pli.imread('lena.jpg')
+plt.imshow(img)
+
+# 保存图片，需放在show()函数之前
+plt.savefig('lena2.jpg')
 plt.show()

@@ -1,4 +1,4 @@
-# More: http://ex2tron.top
+# More: http://ex2tron.wang
 
 import cv2
 

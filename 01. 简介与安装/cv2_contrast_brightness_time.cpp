@@ -1,4 +1,5 @@
-// More: http://ex2tron.top
+// ex2tron's blog:
+// http://ex2tron.wang
 
 #include "stdafx.h"
 #include <opencv2\opencv.hpp>
