@@ -1,7 +1,7 @@
-# More: http://ex2tron.wang
+# ex2tron's blog:
+# http://ex2tron.wang
 
 import cv2
-import numpy as np
 
 img = cv2.imread('lena.jpg')
 
@@ -18,6 +18,8 @@ flags = [i for i in dir(cv2) if i.startswith('COLOR_')]
 print(flags)
 
 # 蓝色的HSV值
+import numpy as np
+
 blue = np.uint8([[[255, 0, 0]]])
 hsv_blue = cv2.cvtColor(blue, cv2.COLOR_BGR2HSV)
 print(hsv_blue)  # [[[120 255 255]]]
