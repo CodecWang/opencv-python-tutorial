@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 
 
-# 1.模板匹配
+# 1. 霍夫直线变换
 img = cv2.imread('shapes.jpg')
 drawing = np.zeros(img.shape[:], dtype=np.uint8)  # 创建画板
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -32,7 +32,7 @@ cv2.imshow('hough lines', np.hstack((img, drawing)))
 cv2.waitKey(0)
 
 
-# 2.统计概率霍夫线变换
+# 2. 统计概率霍夫线变换
 drawing = np.zeros(img.shape[:], dtype=np.uint8)
 
 lines = cv2.HoughLinesP(edges, 0.8, np.pi / 180, 90,
@@ -47,7 +47,7 @@ cv2.imshow('probabilistic hough lines', np.hstack((img, drawing)))
 cv2.waitKey(0)
 
 
-# 3.霍夫圆变换
+# 3. 霍夫圆变换
 drawing = np.zeros(img.shape[:], dtype=np.uint8)
 
 circles = cv2.HoughCircles(edges, cv2.HOUGH_GRADIENT, 1, 20, param2=30)
