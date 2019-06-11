@@ -5,7 +5,7 @@ import cv2
 
 # 1.打开摄像头
 capture = cv2.VideoCapture(2)
-
+capture.open(0) # 打开摄像头
 # 2.获取捕获的分辨率
 width, height = capture.get(3), capture.get(4)
 print(width, height)
