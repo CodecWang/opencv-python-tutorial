@@ -1,8 +1,12 @@
 ## OpenCV-Python图像处理教程（源码及素材）
 
+![](http://pic.ex2tron.top/cv2_python_opencv_cover_gif2.gif)
+
 > 教程地址：[ex2tron's Blog](http://ex2tron.wang)
 
-![](http://pic.ex2tron.top/cv2_python_opencv_cover_gif2.gif)
+p.s. 各目录下的README均为教程内容，但Github不支持公式的显示，所以推荐下方的博客链接。
+
+---
 
 #### 入门篇
 
