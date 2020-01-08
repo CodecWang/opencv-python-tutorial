@@ -1,3 +1,5 @@
+  > 抱歉，由于旧域名和服务器到期，新的还在审核中，导致博客图片和链接均失效，预计还需7左右恢复
+
 ## OpenCV-Python图像处理教程（源码及素材）
 
 ![](http://pic.ex2tron.top/cv2_python_opencv_cover_gif2.gif)
