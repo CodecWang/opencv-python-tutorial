@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇7：亮度与对比度](http://ex2tron.wang/opencv-python-extra-contrast-brightness/)
 
-![](http://pic.ex2tron.top/cv2_contrast_brightness.jpg)
+![](http://blog.codec.wang/cv2_contrast_brightness.jpg)
 
 学习如何调整图片的亮度和对比度。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -29,7 +29,7 @@ cv2.waitKey(0)
 
 还记得图像混合那一节中numpy对数据溢出的取模处理吗？`250+10 = 260 => 260%256=4`，它并不适用于我们的图像处理，所以用[np.clip()](https://docs.scipy.org/doc/numpy/reference/generated/numpy.clip.html#numpy.clip)函数将数据限定：`a<0 => a=0, a>255 => a=255`。
 
-![亮度与对比度调整](http://pic.ex2tron.top/cv2_contrast_brightness.jpg)
+![亮度与对比度调整](http://blog.codec.wang/cv2_contrast_brightness.jpg)
 
 ## 练习
 

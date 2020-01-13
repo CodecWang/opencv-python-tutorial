@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇2：无损保存和Matplotlib使用](http://ex2tron.wang/opencv-python-extra-high-quality-save-and-using-matplotlib/)
  
-![](http://pic.ex2tron.top/cv2_matplotlib_show_gray_image.jpg)
+![](http://blog.codec.wang/cv2_matplotlib_show_gray_image.jpg)
 
 了解常用图片格式和OpenCV高质量保存图片的方式，学习如何使用Matplotlib显示OpenCV图像。<!-- more -->
 
@@ -26,7 +26,7 @@
 
 简单来说，同一个文件保存成不同的格式后，文件大小上bmp肯定是最大的，而png和jpg，不同的压缩比结果会有所不同。可以用画图工具新建一副100×100的图像，分别保存成这三种格式来验证：
 
-![](http://pic.ex2tron.top/cv2_high_save_mspaint_format.jpg)
+![](http://blog.codec.wang/cv2_high_save_mspaint_format.jpg)
 
 
 
@@ -91,7 +91,7 @@ plt.show()
 
 结果如下：
 
-![](http://pic.ex2tron.top/cv2_matplotlib_show_gray_image.jpg)
+![](http://blog.codec.wang/cv2_matplotlib_show_gray_image.jpg)
 
 ### 显示彩色图
 
@@ -129,7 +129,7 @@ img2 = img[:,:] # 写全就是：img2 = img[0:height,0:width]
 
 结果如下：
 
-![](http://pic.ex2tron.top/cv2_matplotlib_show_color_image.jpg)
+![](http://blog.codec.wang/cv2_matplotlib_show_color_image.jpg)
 
 ### 加载和保存图片
 

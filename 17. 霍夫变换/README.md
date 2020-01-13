@@ -1,6 +1,6 @@
 # [OpenCV-Python教程17：霍夫变换](http://ex2tron.wang/opencv-python-hough-transform/)
 
-![](http://pic.ex2tron.top/cv2_understand_hough_transform.jpg)
+![](http://blog.codec.wang/cv2_understand_hough_transform.jpg)
 
 学习使用霍夫变换识别出图像中的直线和圆。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -18,11 +18,11 @@
 
 霍夫变换常用来在图像中提取直线和圆等几何形状，我来做个简易的解释：
 
-![](http://pic.ex2tron.top/cv2_understand_hough_transform.jpg)
+![](http://blog.codec.wang/cv2_understand_hough_transform.jpg)
 
 学过几何的都知道，直线可以分别用直角坐标系和极坐标系来表示：
 
-![](http://pic.ex2tron.top/cv2_line_expression_in_coordinate.jpg)
+![](http://blog.codec.wang/cv2_line_expression_in_coordinate.jpg)
 
 那么经过某个点(x0,y0)的所有直线都可以用这个式子来表示：
 
@@ -32,7 +32,7 @@ $$
 
 也就是说每一个(r,θ)都表示一条经过(x0,y0)直线，那么同一条直线上的点必然会有同样的(r,θ)。如果将某个点所有的(r,θ)绘制成下面的曲线，那么同一条直线上的点的(r,θ)曲线会相交于一点：
 
-  ![](http://pic.ex2tron.top/cv2_curve_of_r_theta.jpg) 
+  ![](http://blog.codec.wang/cv2_curve_of_r_theta.jpg) 
 
 OpenCV中首先计算(r,θ) 累加数，累加数超过一定值后就认为在同一直线上。
 
@@ -77,7 +77,7 @@ for line in lines:
     cv2.line(drawing, (x1, y1), (x2, y2), (0, 0, 255))
 ```
 
-![](http://pic.ex2tron.top/cv2_hough_line_function.jpg)
+![](http://blog.codec.wang/cv2_hough_line_function.jpg)
 
 ### 统计概率霍夫直线变换
 
@@ -104,7 +104,7 @@ for line in lines:
 
 `cv2.LINE_AA`在之前绘图功能中讲解过，表示抗锯齿线型。
 
-![](http://pic.ex2tron.top/cv2_hough_lines_p_function.jpg)
+![](http://blog.codec.wang/cv2_hough_lines_p_function.jpg)
 
 ### 霍夫圆变换
 
@@ -131,7 +131,7 @@ for i in circles[0, :]:
     cv2.circle(drawing, (i[0], i[1]), 2, (0, 0, 255), 3)  # 画出圆心
 ```
 
-![](http://pic.ex2tron.top/cv2_hough_circles_function.jpg)
+![](http://blog.codec.wang/cv2_hough_circles_function.jpg)
 
 ## 小结
 

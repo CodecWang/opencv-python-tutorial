@@ -1,6 +1,6 @@
 # [OpenCV-Python教程09：图像混合](http://ex2tron.wang/opencv-python-image-blending/)
 
-![](http://pic.ex2tron.top/cv2_image_blending_6_4.jpg)
+![](http://blog.codec.wang/cv2_image_blending_6_4.jpg)
 
 学习图片间的数学运算，图像混合。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -42,7 +42,7 @@ img2 = cv2.imread('opencv-logo-white.png')
 res = cv2.addWeighted(img1, 0.6, img2, 0.4, 0)
 ```
 
-![图像混合](http://pic.ex2tron.top/cv2_image_blending_6_4.jpg)
+![图像混合](http://blog.codec.wang/cv2_image_blending_6_4.jpg)
 
 > 经验之谈：α和β都等于1时，就相当于图片相加。
 
@@ -50,11 +50,11 @@ res = cv2.addWeighted(img1, 0.6, img2, 0.4, 0)
 
 按位操作包括按位与/或/非/异或操作，有什么用途呢？比如说我们要实现下图的效果：
 
-![](http://pic.ex2tron.top/cv2_bitwise_operations_demo.jpg)
+![](http://blog.codec.wang/cv2_bitwise_operations_demo.jpg)
 
 如果将两幅图片直接相加会改变图片的颜色，如果用图像混合，则会改变图片的透明度，所以我们需要用按位操作。首先来了解一下[掩膜](https://baike.baidu.com/item/%E6%8E%A9%E8%86%9C/8544392?fr=aladdin)（mask）的概念：掩膜是用一副二值化图片对另外一幅图片进行局部的遮挡，看下图就一目了然了：
 
-![掩膜概念](http://pic.ex2tron.top/cv2_understand_mask.jpg)
+![掩膜概念](http://blog.codec.wang/cv2_understand_mask.jpg)
 
 所以我们的思路就是把原图中要放logo的区域抠出来，再把logo放进去就行了：
 

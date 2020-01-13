@@ -1,6 +1,6 @@
 # [OpenCV-Python教程14：轮廓特征](http://ex2tron.wang/opencv-python-contour-features/)
 
-![](http://pic.ex2tron.top/cv2_min_rect_rect_bounding.jpg)
+![](http://blog.codec.wang/cv2_min_rect_rect_bounding.jpg)
 
 学习计算轮廓特征，如面积、周长、最小外接矩形等。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -15,7 +15,7 @@
 
 在计算轮廓特征之前，我们先用上一节的代码把轮廓找到：
 
-![](http://pic.ex2tron.top/cv2_31_handwriting_sample.jpg)
+![](http://blog.codec.wang/cv2_31_handwriting_sample.jpg)
 
 ```python
 import cv2
@@ -73,7 +73,7 @@ cx, cy = M['m10'] / M['m00'], M['m01'] / M['m00']  # (205, 281)
 
 形状的外接矩形有两种，如下图，绿色的叫外接矩形，表示不考虑旋转并且能包含整个轮廓的矩形。蓝色的叫最小外接矩，考虑了旋转：
 
-![](http://pic.ex2tron.top/cv2_min_rect_rect_bounding.jpg)
+![](http://blog.codec.wang/cv2_min_rect_rect_bounding.jpg)
 
 ```python
 x, y, w, h = cv2.boundingRect(cnt)  # 外接矩形
@@ -98,7 +98,7 @@ cv2.drawContours(img_color1, [box], 0, (255, 0, 0), 2)
 cv2.circle(img_color2, (x, y), radius, (0, 0, 255), 2)
 ```
 
-![](http://pic.ex2tron.top/cv2_min_enclosing_circle.jpg)
+![](http://blog.codec.wang/cv2_min_enclosing_circle.jpg)
 
 ### 拟合椭圆
 
@@ -109,13 +109,13 @@ ellipse = cv2.fitEllipse(cnt)
 cv2.ellipse(img_color2, ellipse, (255, 255, 0), 2)
 ```
 
-![](http://pic.ex2tron.top/cv2_fitting_ellipse.jpg)
+![](http://blog.codec.wang/cv2_fitting_ellipse.jpg)
 
 ### 形状匹配
 
 `cv2.matchShapes()`可以检测两个形状之间的相似度，返回**值越小，越相似**。先读入下面这张图片：
 
-![](http://pic.ex2tron.top/cv2_match_shape_shapes.jpg)
+![](http://blog.codec.wang/cv2_match_shape_shapes.jpg)
 
 ```python
 img = cv2.imread('shapes.jpg', 0)

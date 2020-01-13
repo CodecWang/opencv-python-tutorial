@@ -1,6 +1,6 @@
 # [OpenCV-Python教程13：轮廓](http://ex2tron.wang/opencv-python-contours/)
 
-![](http://pic.ex2tron.top/cv2_understand_contours.jpg)
+![](http://blog.codec.wang/cv2_understand_contours.jpg)
 
 学习如何寻找并绘制轮廓。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -20,7 +20,7 @@
 
 谈起轮廓不免想到边缘，它们确实很像。简单的说，**轮廓是连续的，边缘并不全都连续**（下图）。其实边缘主要是作为图像的特征使用，比如可以用边缘特征可以区分脸和手，而轮廓主要用来分析物体的形态，比如物体的周长和面积等，可以说边缘包括轮廓。
 
-![边缘和轮廓的区别](http://pic.ex2tron.top/cv2_understand_contours.jpg)
+![边缘和轮廓的区别](http://blog.codec.wang/cv2_understand_contours.jpg)
 
 寻找轮廓的操作一般用于二值化图，所以通常会使用阈值分割或Canny边缘检测先得到二值图。
 
@@ -49,7 +49,7 @@ print(len(contours))  # 结果应该为2
 
 函数有3个返回值，image还是原来的二值化图片，hierarchy是轮廓间的层级关系（[番外篇：轮廓层级](/opencv-python-extra-contours-hierarchy/)），这两个暂时不用理会。我们主要看contours，它就是找到的轮廓了，以数组形式存储，记录了每条轮廓的所有像素点的坐标(x,y)。
 
-![](http://pic.ex2tron.top/cv2_find_contours_contours.jpg)
+![](http://blog.codec.wang/cv2_find_contours_contours.jpg)
 
 ### 绘制轮廓
 

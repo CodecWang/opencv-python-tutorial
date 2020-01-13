@@ -1,6 +1,6 @@
 # [OpenCV-Python教程05：颜色空间转换](http://ex2tron.wang/opencv-python-changing-colorspaces/)
 
-![](http://pic.ex2tron.top/cv2_exercise_tracking_three_colors.jpg)
+![](http://blog.codec.wang/cv2_exercise_tracking_three_colors.jpg)
 
 学习如何进行图片的颜色空间转换，视频中追踪特定颜色的物体。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -50,7 +50,7 @@ print(flags)
 3. 提取蓝色范围的物体
 4. 只显示蓝色物体
 
-![跟踪视频中的蓝色物体](http://pic.ex2tron.top/cv2_blue_object_tracking.jpg)
+![跟踪视频中的蓝色物体](http://blog.codec.wang/cv2_blue_object_tracking.jpg)
 
 ```python
 import numpy as np
@@ -103,7 +103,7 @@ print(hsv_blue)  # [[[120 255 255]]]
 
 1. 尝试在视频中同时提取红色、蓝色、绿色的物体。（效果如下）
 
-![同时追踪3种颜色](http://pic.ex2tron.top/cv2_exercise_tracking_three_colors.jpg)
+![同时追踪3种颜色](http://blog.codec.wang/cv2_exercise_tracking_three_colors.jpg)
 
 ## 接口文档
 

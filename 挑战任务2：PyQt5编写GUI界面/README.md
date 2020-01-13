@@ -1,6 +1,6 @@
 # [OpenCV-Python教程拓展挑战：PyQt编写GUI界面](http://ex2tron.wang/opencv-python-using-pyqt5-create-gui/)
 
-![](http://pic.ex2tron.top/cv2_pyqt_gui_sample.jpg)
+![](http://blog.codec.wang/cv2_pyqt_gui_sample.jpg)
 
 拓展挑战：编写GUI图像处理应用程序。<!-- more -->
 
@@ -12,7 +12,7 @@
 
 > **了解Python编写[GUI](https://baike.baidu.com/item/GUI)界面的方法，使用PyQt5编写如下的图像处理应用程序，实现打开摄像头、捕获图片、读取本地图片、灰度化和Otsu自动阈值分割的功能。**
 
-![](http://pic.ex2tron.top/cv2_pyqt_gui_sample.jpg)
+![](http://blog.codec.wang/cv2_pyqt_gui_sample.jpg)
 
 **挑战题不会做也木有关系，但请务必在自行尝试后，再看下面的解答噢，**不然...我也没办法(￣▽￣)"
 
@@ -69,19 +69,19 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-![](http://pic.ex2tron.top/cv2_pyqt5_hello_world_sample.jpg)
+![](http://blog.codec.wang/cv2_pyqt5_hello_world_sample.jpg)
 
 ### 界面设计
 
 根据我们的挑战内容，解决思路是使用Qt Designer来设计界面，使用Python完成代码逻辑。打开designer.exe，会弹出创建新窗体的窗口，我们直接点击“create”：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_designer_main_ui.jpg)
+![](http://blog.codec.wang/cv2_pyqt5_designer_main_ui.jpg)
 
 界面的左侧是Qt的常用控件"Widget Box"，右侧有一个控件属性窗口"Property Editor"，其余暂时用不到。本例中我们只用到了"Push Button"控件和"Label"控件：最上面的三个Label控件用于显示图片，可以在属性窗口调整它的大小，我们统一调整到150×150：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_main_ui_rough.jpg)
+![](http://blog.codec.wang/cv2_pyqt5_main_ui_rough.jpg)
 
-![](http://pic.ex2tron.top/cv2_pyqt5_designer_property_windows.jpg)
+![](http://blog.codec.wang/cv2_pyqt5_designer_property_windows.jpg)
 
 另外，控件上显示的文字"text"属性和控件的名字"objectName"属性需要修改，便于显示和代码调用。可以按照下面我推荐的命名：
 
@@ -98,7 +98,7 @@ if __name__ == '__main__':
 
 这样大致界面就出来了，很简单：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_main_ui_word.jpg)
+![](http://blog.codec.wang/cv2_pyqt5_main_ui_word.jpg)
 
 ### 按钮事件
 
@@ -106,19 +106,19 @@ if __name__ == '__main__':
 
 点击Designer工具栏的"Edit Signals/Slots"按钮，进入槽函数编辑界面，点击旁边的"Edit Widgets"可以恢复正常视图：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_designer_edit_singals_slots.jpg)
+![](http://blog.codec.wang/cv2_pyqt5_designer_edit_singals_slots.jpg)
 
 然后点击按钮并拖动，当产生类似于电路中的接地符号时释放鼠标，参看下面动图：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_how_to_create_slots.gif)
+![](http://blog.codec.wang/cv2_pyqt5_how_to_create_slots.gif)
 
 在弹出的配置窗口中，可以看到左侧是按钮的常用事件，我们选择点击事件"clicked()"，然后添加一个名为"btnOpenCamera_Clicked()"的槽函数：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_how_to_create_slots2.gif)
+![](http://blog.codec.wang/cv2_pyqt5_how_to_create_slots2.gif)
 
 重复上面的步骤，给五个按钮添加五个槽函数，最终结果如下：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_main_click_event.jpg)
+![](http://blog.codec.wang/cv2_pyqt5_main_click_event.jpg)
 
 到此，我们就完成了界面设计的所有工作，按下Ctrl+S保存当前窗口为.ui文件。.ui文件其实是按照XML格式标记的内容，可以用文本编辑器将.ui文件打开看看。
 
@@ -128,7 +128,7 @@ if __name__ == '__main__':
 
 打开cmd命令行，切换到ui文件的保存目录。Windows下有个小技巧，可以在目录的地址栏输入cmd，一步切换到当前目录：
 
-![](http://pic.ex2tron.top/cv2_pyqt5_pyuic_quick_cmd.gif)
+![](http://blog.codec.wang/cv2_pyqt5_pyuic_quick_cmd.gif)
 
 然后执行这条指令：
 
@@ -273,7 +273,7 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-![](http://pic.ex2tron.top/cv2_pyqt_gui_sample2.jpg)
+![](http://blog.codec.wang/cv2_pyqt_gui_sample2.jpg)
 
 本文只是抛砖引玉，介绍了PyQt5的简单使用，想要深入学习，可以参考本文开头的参考资料噢(●ˇ∀ˇ●)
 

@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇5：仿射变换与透视变换](http://ex2tron.wang/opencv-python-extra-warpaffine-warpperspective/)
 
-![](http://pic.ex2tron.top/cv2_image_transformation_sample.jpg)
+![](http://blog.codec.wang/cv2_image_transformation_sample.jpg)
 
 常见的2D图像变换从原理上讲主要包括基于2×3矩阵的[仿射变换](https://baike.baidu.com/item/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2)和基于3×3矩阵[透视变换](https://baike.baidu.com/item/%E9%80%8F%E8%A7%86%E5%8F%98%E6%8D%A2)。<!-- more -->
 
@@ -60,7 +60,7 @@ R=\left[
 $$
 矩阵T(2×3)就称为仿射变换的变换矩阵，R为线性变换矩阵，t为平移矩阵，简单来说，仿射变换就是线性变换+平移。变换后直线依然是直线，平行线依然是平行线，直线间的相对位置关系不变，因此**非共线的三个对应点便可确定唯一的一个仿射变换**，线性变换4个自由度+平移2个自由度→**仿射变换自由度为6**。
 
-![](http://pic.ex2tron.top/cv2_warp_affine_image_sample_introduction2.jpg)
+![](http://blog.codec.wang/cv2_warp_affine_image_sample_introduction2.jpg)
 
 来看下OpenCV中如何实现仿射变换：
 
@@ -90,15 +90,15 @@ plt.show()
 
 > 思考：三个点我标记的是红色，为什么Matplotlib显示出来是下面这种颜色？（[练习](#练习)）
 
-![仿射变换前后对比图](http://pic.ex2tron.top/cv2_affine_transformation_drawing.jpg)
+![仿射变换前后对比图](http://blog.codec.wang/cv2_affine_transformation_drawing.jpg)
 
 其实平移、旋转、缩放和翻转等变换就是对应了不同的仿射变换矩阵，下面分别来看下。
 
-![](http://pic.ex2tron.top/cv2_image_transformation_sample.jpg)
+![](http://blog.codec.wang/cv2_image_transformation_sample.jpg)
 
 ### 平移
 
-![](http://pic.ex2tron.top/cv2_warp_affine_shift_sample.jpg)
+![](http://blog.codec.wang/cv2_warp_affine_shift_sample.jpg)
 
 平移就是x和y方向上的直接移动，可以上下/左右移动，自由度为2，变换矩阵可以表示为：
 $$
@@ -126,7 +126,7 @@ $$
 $$
 ### 旋转
 
-![](http://pic.ex2tron.top/cv2_warp_affine_rotation_sample.jpg)
+![](http://blog.codec.wang/cv2_warp_affine_rotation_sample.jpg)
 
 旋转是坐标轴方向饶原点旋转一定的角度θ，自由度为1，不包含平移，如顺时针旋转可以表示为：
 $$
@@ -215,7 +215,7 @@ $$
 
 ### 缩放
 
-![](http://pic.ex2tron.top/cv2_warp_affine_scale_sampel.jpg)
+![](http://blog.codec.wang/cv2_warp_affine_scale_sampel.jpg)
 
 缩放是x和y方向的尺度（倍数）变换，在有些资料上非等比例的缩放也称为拉伸/挤压，等比例缩放自由度为1，非等比例缩放自由度为2，矩阵可以表示为：
 $$
@@ -280,7 +280,7 @@ $$
 
 > 经验之谈：OpenCV中默认按照逆时针旋转噢~
 
-总结一下（[原图[#计算机视觉：算法与应用p39]](http://pic.ex2tron.top/cv2_transformation_matrix_dof_summary.jpg)）：
+总结一下（[原图[#计算机视觉：算法与应用p39]](http://blog.codec.wang/cv2_transformation_matrix_dof_summary.jpg)）：
 
 | 变换 |      矩阵      | 自由度 |           保持性质           |
 | :--: | :------------: | :----: | :--------------------------: |
@@ -294,7 +294,7 @@ $$
 
 前面仿射变换后依然是平行四边形，并不能做到任意的变换。
 
-![](http://pic.ex2tron.top/cv2_warp_perspective_image_sample4.jpg)
+![](http://blog.codec.wang/cv2_warp_perspective_image_sample4.jpg)
 
 [透视变换](https://baike.baidu.com/item/%E9%80%8F%E8%A7%86%E5%8F%98%E6%8D%A2)（Perspective Transformation）是将二维的图片投影到一个三维视平面上，然后再转换到二维坐标下，所以也称为投影映射（Projective Mapping）。简单来说就是二维→三维→二维的一个过程。
 $$
@@ -348,7 +348,7 @@ $$
 
 OpenCV中首先根据变换前后的四个点用`cv2.getPerspectiveTransform()`生成3×3的变换矩阵，然后再用`cv2.warpPerspective()`进行透视变换。实战演练一下：
 
-![矫正一鸣的卡片](http://pic.ex2tron.top/cv2_perspective_transformations_inm.jpg)
+![矫正一鸣的卡片](http://blog.codec.wang/cv2_perspective_transformations_inm.jpg)
 
 ```python
 img = cv2.imread('card.jpg')
@@ -379,6 +379,6 @@ plt.show()
 ## 引用
 
 - [本节源码](https://github.com/ex2tron/OpenCV-Python-Tutorial/tree/master/%E7%95%AA%E5%A4%96%E7%AF%8705.%20%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E5%92%8C%E9%80%8F%E8%A7%86%E5%8F%98%E6%8D%A2%E5%8E%9F%E7%90%86)
-- [计算机视觉：算法与应用](http://pic.ex2tron.top/Computer%20Vision%EF%BC%9AAlgorithms%20and%20Applications.pdf)
+- [计算机视觉：算法与应用](http://blog.codec.wang/Computer%20Vision%EF%BC%9AAlgorithms%20and%20Applications.pdf)
 - [维基百科：仿射变换](https://zh.wikipedia.org/wiki/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2)
 - [如何通俗地讲解「仿射变换」这个概念？](https://www.zhihu.com/question/20666664)

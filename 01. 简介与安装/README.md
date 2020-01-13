@@ -1,6 +1,6 @@
 # [OpenCV-Python教程01：简介与安装](http://ex2tron.wang/opencv-python-introduction-and-installation/)
 
-![](http://pic.ex2tron.top/cv2_install_opencv-python.jpg)
+![](http://blog.codec.wang/cv2_install_opencv-python.jpg)
 
 相信大部分人知道的OpenCV都是用C++来开发的，那为什么我推荐使用Python呢？<!-- more -->
 
@@ -14,7 +14,7 @@
 
 我举两个简单的例子就一目了然了：一个是读入图片，另一个是调整图片的对比度和亮度：
 
-![](http://pic.ex2tron.top/cv2_python_vs_cplus_speed.jpg)
+![](http://blog.codec.wang/cv2_python_vs_cplus_speed.jpg)
 
 **可以看到某些情况下Python的运行速度甚至好于C++，代码行数也直接少一半多！**另外，图像是矩阵数据，OpenCV-Python原生支持[Numpy](https://baike.baidu.com/item/numpy)，相当于Python中的Matlab，为矩阵运算、科学计算提供了极大的便利性。
 
@@ -22,7 +22,7 @@
 
 近些年，人工智能相关技术的快速发展大家有目共睹，不必多说。在编程语言方面，更多人希望的是具备高效开发效率、跨平台、高度扩展性的语言，尤其是一些AI巨头优先推出支持Python语言的深度学习框架，如Facebook的[PyTorch](https://pytorch.org/)、Google的[Tensorflow](https://tensorflow.google.cn/)等，可以说Python是名副其实的“网红语言”了。
 
-![](http://pic.ex2tron.top/cv2_ai_ml_dl2.jpg)
+![](http://blog.codec.wang/cv2_ai_ml_dl2.jpg)
 
 从[TIOBE编程语言排行榜](https://www.tiobe.com/tiobe-index/)也可以看到，Python发展迅猛，已经逼近C++的份额。这个排行榜每月更新，我就不截图了，编写时TOP5：Java/C/C++/Python/C#。
 
@@ -76,7 +76,7 @@ print(cv2.__version__)  # '3.4.1'
 
 为了便于学习OpenCV，我写了一个教学款软件[LearnOpenCVEdu](https://github.com/ex2tron/LearnOpenCVEdu)，目前只开发了一部分功能，有兴趣的童鞋可以支持一下噢😊
 
-![大家随手点个Star吧(●ˇ∀ˇ●)](http://pic.ex2tron.top/cv2_learn_opencv_edu_soft_screenshot.jpg)
+![大家随手点个Star吧(●ˇ∀ˇ●)](http://blog.codec.wang/cv2_learn_opencv_edu_soft_screenshot.jpg)
 
 > 经验之谈：虽然从一开始我就推荐大家使用OpenCV-Python进行图像处理，但*想要深入理解OpenCV*，C++还是必须的，尤其是**OpenCV源码**！
 

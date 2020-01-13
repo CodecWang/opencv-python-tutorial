@@ -1,6 +1,6 @@
 # [OpenCV-Python教程16：模板匹配](http://ex2tron.wang/opencv-python-template-matching/)
 
-![](http://pic.ex2tron.top/cv2_understand_template_matching.jpg)
+![](http://blog.codec.wang/cv2_understand_template_matching.jpg)
 
 学习使用模板匹配在图像中寻找物体。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -17,7 +17,7 @@
 
 [模板匹配](https://baike.baidu.com/item/模板匹配)就是用来在大图中找小图，也就是说在一副图像中寻找另外一张模板图像的位置：
 
-![](http://pic.ex2tron.top/cv2_understand_template_matching.jpg)
+![](http://blog.codec.wang/cv2_understand_template_matching.jpg)
 
 用`cv2.matchTemplate()`实现模板匹配。首先我们来读入图片和模板：
 
@@ -43,7 +43,7 @@ right_bottom = (left_top[0] + w, left_top[1] + h)  # 右下角
 cv2.rectangle(img, left_top, right_bottom, 255, 2)  # 画出矩形位置
 ```
 
-![](http://pic.ex2tron.top/cv2_ccoeff_matching_template.jpg)
+![](http://blog.codec.wang/cv2_ccoeff_matching_template.jpg)
 
 ### 原理
 
@@ -82,7 +82,7 @@ for pt in zip(*loc[::-1]):  # *号表示可选参数
     cv2.rectangle(img_rgb, pt, right_bottom, (0, 0, 255), 2)
 ```
 
-![](http://pic.ex2tron.top/cv2_template_matching_multi.jpg)
+![](http://blog.codec.wang/cv2_template_matching_multi.jpg)
 
 第3步有几个Python/Numpy的重要知识，来大致看下：
 
@@ -94,7 +94,7 @@ print(np.where(x > 5))
 # 结果(先y坐标，再x坐标)：(array([2, 2, 2]), array([0, 1, 2]))
 ```
 
-![](http://pic.ex2tron.top/cv2_np_where_function.jpg)
+![](http://blog.codec.wang/cv2_np_where_function.jpg)
 
 - [zip()](https://docs.python.org/3/library/functions.html#zip)函数，功能强大到难以解释，举个简单例子就知道了：
 

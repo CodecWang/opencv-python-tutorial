@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇3：滑动条](http://ex2tron.wang/opencv-python-extra-trackbar/)
 
-![](http://pic.ex2tron.top/cv2_track_bar_rgb.jpg)
+![](http://blog.codec.wang/cv2_track_bar_rgb.jpg)
 
 学习使用滑动条动态调整参数。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -51,7 +51,7 @@ while(True):
     img[:] = [b, g, r]
 ```
 
-![](http://pic.ex2tron.top/cv2_track_bar_rgb.jpg)
+![](http://blog.codec.wang/cv2_track_bar_rgb.jpg)
 
 ## 小结
 

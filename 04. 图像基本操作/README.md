@@ -1,6 +1,6 @@
 # [OpenCV-Python教程04：图像基本操作](http://ex2tron.wang/opencv-python-basic-operations/)
 
-![](http://pic.ex2tron.top/cv2_lena_face_roi_crop.jpg)
+![](http://blog.codec.wang/cv2_lena_face_roi_crop.jpg)
 
 学习获取和修改像素点的值，ROI感兴趣区域，通道分离合并等基本操作。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -78,7 +78,7 @@ print(img.size)  # 263*247*3=194883
 
 [ROI](https://baike.baidu.com/item/ROI/1125333#viewPageContent)：Region of Interest，感兴趣区域。什么意思呢？比如我们要检测眼睛，因为眼睛肯定在脸上，所以我们感兴趣的只有脸这部分，其他都不care，所以可以单独把脸截取出来，这样就可以大大节省计算量，提高运行速度。
 
-![只关心脸( ╯□╰ )](http://pic.ex2tron.top/cv2_lena_face_roi_crop.jpg)
+![只关心脸( ╯□╰ )](http://blog.codec.wang/cv2_lena_face_roi_crop.jpg)
 
 截取ROI非常简单，指定图片的范围即可（后面我们学了特征后，就可以自动截取辣，(ง •_•)ง）：
 

@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇10：轮廓层级](http://ex2tron.wang/opencv-python-extra-contours-hierarchy/)
 
-![](http://pic.ex2tron.top/cv2_understand_hierarchy.jpg)
+![](http://blog.codec.wang/cv2_understand_hierarchy.jpg)
 
 了解轮廓间的层级关系。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -12,7 +12,7 @@
 
 很多情况下，图像中的形状之间是有关联的，比如说下图：
 
-![](http://pic.ex2tron.top/cv2_understand_hierarchy.jpg)
+![](http://blog.codec.wang/cv2_understand_hierarchy.jpg)
 
 图中总共有8条轮廓，2和2a分别表示外层和里层的轮廓，3和3a也是一样。从图中看得出来：
 
@@ -63,7 +63,7 @@ cv2.drawContours(img, contours, -1, (0, 0, 255), 2)
 
 > 经验之谈：OpenCV中找到的轮廓序号跟前面讲的不同噢，如下图：
 
-![](http://pic.ex2tron.top/cv2_hierarchy_RETR_TREE.jpg)
+![](http://blog.codec.wang/cv2_hierarchy_RETR_TREE.jpg)
 
 现在既然我们了解了层级的概念，那么类似cv2.RETR_TREE的轮廓寻找方式又是啥意思呢？
 
@@ -111,7 +111,7 @@ print(len(contours), hierarchy, sep='\n')
   [-1  1 -1 -1]]]
 ```
 
-![](http://pic.ex2tron.top/cv2_hierarchy_RETR_EXTERNAL.jpg)
+![](http://blog.codec.wang/cv2_hierarchy_RETR_EXTERNAL.jpg)
 
 ### 4. RETR_CCOMP
 
@@ -131,7 +131,7 @@ print(hierarchy)
   [-1  6 -1 -1]]]
 ```
 
-![](http://pic.ex2tron.top/cv2_hierarchy_RETR_CCOMP.jpg)
+![](http://blog.codec.wang/cv2_hierarchy_RETR_CCOMP.jpg)
 
 > 注意：使用这个参数找到的轮廓序号与之前不同。
 
@@ -141,7 +141,7 @@ print(hierarchy)
 
 1. 如下图，找到3个圆环的内环，然后填充成(180,215,215)这种颜色：
 
-![](http://pic.ex2tron.top/cv2_hierarchy_fill_holes.jpg)
+![](http://blog.codec.wang/cv2_hierarchy_fill_holes.jpg)
 
 ## 引用
 

@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇9：图像梯度](http://ex2tron.wang/opencv-python-extra-image-gradients/)
 
-![](http://pic.ex2tron.top/cv2_horizen_vertical_edge_detection.jpg)
+![](http://blog.codec.wang/cv2_horizen_vertical_edge_detection.jpg)
 
 了解图像梯度和边缘检测的相关概念。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -30,7 +30,7 @@ $$
 
 这个核是用来提取图片中的垂直边缘的，怎么做到的呢？看下图：
 
-![](http://pic.ex2tron.top/cv2_understand_sobel_edge_detection.jpg)
+![](http://blog.codec.wang/cv2_understand_sobel_edge_detection.jpg)
 
 当前列左右两侧的元素进行差分，由于边缘的值明显小于（或大于）周边像素，所以边缘的差分结果会明显不同，这样就提取出了垂直边缘。同理，把上面那个矩阵转置一下，就是提取水平边缘。这种差分操作就称为图像的梯度计算：
 
@@ -44,7 +44,7 @@ k2 = \left[
   \right]
 $$
 
-![垂直和水平边缘提取](http://pic.ex2tron.top/cv2_horizen_vertical_edge_detection.jpg)
+![垂直和水平边缘提取](http://blog.codec.wang/cv2_horizen_vertical_edge_detection.jpg)
 
 > 还记得滤波函数`cv2.filter2D()`吗？（[番外篇：卷积基础](/opencv-python-extra-padding-and-convolution/)）我们来手动实现上面的功能：
 
@@ -169,7 +169,7 @@ OpenCV中直接使用`cv2.Laplacian()`函数：
 laplacian = cv2.Laplacian(img, -1)  # 使用Laplacian算子
 ```
 
-![](http://pic.ex2tron.top/cv2_laplacian.jpg)
+![](http://blog.codec.wang/cv2_laplacian.jpg)
 
 Laplacian算子是二阶边缘检测的典型代表，一/二阶边缘检测各有优缺点，大家可自行了解。
 

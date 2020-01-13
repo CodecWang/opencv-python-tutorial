@@ -1,6 +1,6 @@
 # [OpenCV-Python教程10：平滑图像](http://ex2tron.wang/opencv-python-smoothing-images/)
 
-![](http://pic.ex2tron.top/cv2_bilateral_vs_gaussian.jpg)
+![](http://blog.codec.wang/cv2_bilateral_vs_gaussian.jpg)
 
 学习模糊/平滑图像，消除噪点。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -72,7 +72,7 @@ blur = cv2.boxFilter(img, -1, (3, 3), normalize=True)
 
 前面两种滤波方式，卷积核内的每个值都一样，也就是说图像区域中每个像素的权重也就一样。高斯滤波的卷积核权重并不相同：中间像素点权重最高，越远离中心的像素权重越小，来，数学时间( ╯□╰ )，还记得标准正态分布的曲线吗？
 
-![](http://pic.ex2tron.top/cv2_gaussian_kernel_function_theory.jpg)
+![](http://blog.codec.wang/cv2_gaussian_kernel_function_theory.jpg)
 
 显然这种处理元素间权值的方式更加合理一些。图像是2维的，所以我们需要使用[2维的高斯函数](https://en.wikipedia.org/wiki/Gaussian_filter)，比如OpenCV中默认的3×3的高斯卷积核（具体原理和卷积核生成方式请参考文末的[番外小篇](#番外小篇：高斯滤波卷积核)）：
 
@@ -96,7 +96,7 @@ gaussian = cv2.GaussianBlur(img, (5, 5), 1)  # 高斯滤波
 
 参数3 σx值越大，模糊效果越明显。高斯滤波相比均值滤波效率要慢，但可以有效消除高斯噪声，能保留更多的图像细节，所以经常被称为最有用的滤波器。均值滤波与高斯滤波的对比结果如下（均值滤波丢失的细节更多）：
 
-![](http://pic.ex2tron.top/cv2_gaussian_vs_average.jpg)
+![](http://blog.codec.wang/cv2_gaussian_vs_average.jpg)
 
 ### 中值滤波
 
@@ -111,7 +111,7 @@ blur = cv2.blur(img, (5, 5))  # 均值滤波
 median = cv2.medianBlur(img, 5)  # 中值滤波
 ```
 
-![](http://pic.ex2tron.top/cv2_median_vs_average.jpg)
+![](http://blog.codec.wang/cv2_median_vs_average.jpg)
 
 ### 双边滤波
 
@@ -124,7 +124,7 @@ gau = cv2.GaussianBlur(img, (5, 5), 0)  # 高斯滤波
 blur = cv2.bilateralFilter(img, 9, 75, 75)  # 双边滤波
 ```
 
-![](http://pic.ex2tron.top/cv2_bilateral_vs_gaussian.jpg)
+![](http://blog.codec.wang/cv2_bilateral_vs_gaussian.jpg)
 
 可以看到，双边滤波明显保留了更多边缘信息。
 

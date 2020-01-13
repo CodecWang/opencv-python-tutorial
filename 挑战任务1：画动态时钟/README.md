@@ -1,6 +1,6 @@
 # [OpenCV-Python教程挑战任务：画动态时钟](http://ex2tron.wang/opencv-python-clock-drawing/)
  
-![](http://pic.ex2tron.top/cv2_draw_clock_dynamic_sample.gif)
+![](http://blog.codec.wang/cv2_draw_clock_dynamic_sample.gif)
 
 挑战任务：使用OpenCV绘制一个随系统时间动态变化的时钟。<!-- more -->
 
@@ -10,7 +10,7 @@
 
 > **完成如下图所展示的动态时钟，时钟需随系统时间变化，中间显示当前日期。**
 
-![](http://pic.ex2tron.top/cv2_draw_clock_dynamic_sample.gif)
+![](http://blog.codec.wang/cv2_draw_clock_dynamic_sample.gif)
 
 其实本次任务涉及的OpenCV知识并不多，但有助于提升大家的编程实践能力。
 
@@ -24,7 +24,7 @@
 
 本次挑战任务旨在提升大家的动手实践能力，解决实际问题，所以我们得先有个解题思路和方案。观察下常见的时钟表盘：
 
-![](http://pic.ex2tron.top/cv2_draw_clock_actual_clock_sample.jpg)
+![](http://blog.codec.wang/cv2_draw_clock_actual_clock_sample.jpg)
 
 整个表盘其实只有3根表针在动，所以可以先画出静态表盘，然后获取系统当前时间，根据时间实时动态绘制3根表针就解决了。
 
@@ -50,7 +50,7 @@ img[:] = (255, 255, 255)
 cv2.circle(img, center, radius, (0, 0, 0), thickness=5)
 ```
 
-![](http://pic.ex2tron.top/cv2_draw_clock_blank_circle.jpg)
+![](http://blog.codec.wang/cv2_draw_clock_blank_circle.jpg)
 
 前面我们使用OpenCV画直线的时候，需知道直线的起点和终点坐标，那么画72根线就变成了获取72组坐标。
 
@@ -61,7 +61,7 @@ $$
    y=r\times \sin\alpha
 \end{matrix}
 $$
-![](http://pic.ex2tron.top/cv2_draw_clock_center_shift.jpg)
+![](http://blog.codec.wang/cv2_draw_clock_center_shift.jpg)
 
 先只考虑将坐标系原点移动到左上角，角度依然是平面坐标系中的逆时针计算，那么新坐标是：
 
@@ -74,7 +74,7 @@ $$
 
 对于60条分/秒刻线，刻线间的夹角是360°/60=6°，对于小时刻线，角度是360°/12=30°，这样就得到了72组起点坐标，那怎么得到终点坐标呢？其实同样的原理，用一个同心的小圆来计算得到B点：
 
-![](http://pic.ex2tron.top/cv2_draw_clock_a_b_position.jpg)
+![](http://blog.codec.wang/cv2_draw_clock_a_b_position.jpg)
 
 通过A/B两点就可以画出直线：
 
@@ -105,13 +105,13 @@ for i in range(12):
 # 到这里基本的表盘图就已经画出来了
 ```
 
-![](http://pic.ex2tron.top/cv2_draw_clock_blank_clock.jpg)
+![](http://blog.codec.wang/cv2_draw_clock_blank_clock.jpg)
 
 ### 角度换算
 
 接下来算是一个小难点，首先**时钟的起始坐标在正常二维坐标系的90°方向，其次时钟跟图像一样，都是顺时针计算角度的**，所以三者需要统一下：
 
-![](http://pic.ex2tron.top/cv2_draw_clock_different_clock_contrast.jpg)
+![](http://blog.codec.wang/cv2_draw_clock_different_clock_contrast.jpg)
 
 因为角度是完全对称的，顺逆时针没有影响，所以平面坐标系完全不用理会，放在这里只是便于大家理解。对于时钟坐标和图像坐标，时钟0的0°对应图像的270°，时钟15的90°对应图像的360°，时钟30的180°对应图像的450°（360°+90°）...
 
@@ -164,7 +164,7 @@ while(1):
         break
 ```
 
-![](http://pic.ex2tron.top/cv2_draw_clock_sample.jpg)
+![](http://blog.codec.wang/cv2_draw_clock_sample.jpg)
 
 本此挑战旨在锻炼一步步解决实际问题的思路（虽然有点数学知识(￣▽￣)"），大家再接再厉噢！
 

@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇6：鼠标绘图](http://ex2tron.wang/opencv-python-extra-drawing-with-mouse/)
 
-![](http://pic.ex2tron.top/cv2_live_draw_rectangle.gif)
+![](http://blog.codec.wang/cv2_live_draw_rectangle.gif)
 
 学习如何用鼠标实时绘图。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -110,7 +110,7 @@ while(True):
 
 效果应该如下图所示：
 
-![](http://pic.ex2tron.top/cv2_mouse_drawing_rectangle_circle.jpg)
+![](http://blog.codec.wang/cv2_mouse_drawing_rectangle_circle.jpg)
 
 ## 小结
 
@@ -120,7 +120,7 @@ while(True):
 
 1.（选做）实现用鼠标画矩形，跟实例差不多，但只实时画一个，类似下面动图：
 
-![实时画一个矩形](http://pic.ex2tron.top/cv2_live_draw_rectangle.gif)
+![实时画一个矩形](http://blog.codec.wang/cv2_live_draw_rectangle.gif)
 
 2.（选做）做一个在白色面板上绘图的简单程序，可用滑动条调整颜色和笔刷大小。
 

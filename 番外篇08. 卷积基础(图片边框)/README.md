@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇8：卷积基础(图片边框)](http://ex2tron.wang/opencv-python-extra-padding-and-convolution/)
 
-![](http://pic.ex2tron.top/cv2_understand_padding.jpg)
+![](http://blog.codec.wang/cv2_understand_padding.jpg)
 
 了解卷积/滤波的基础知识，给图片添加边框。<!-- more -->如果你已了解相关理论，请直接跳到[添加边框](#添加边框)部分。
 
@@ -12,7 +12,7 @@
 
 什么是二维卷积呢？看下面一张图就一目了然：
 
-![](http://pic.ex2tron.top/cv2_understand_convolution.jpg)
+![](http://blog.codec.wang/cv2_understand_convolution.jpg)
 
 卷积就是循环对**图像跟一个核逐个元素相乘再求和得到另外一副图像的操作**，比如结果图中第一个元素5是怎么算的呢？原图中3×3的区域与3×3的核逐个元素相乘再相加：
 $$
@@ -20,7 +20,7 @@ $$
 $$
 算完之后，整个框再往右移一步继续计算，横向计算完后，再往下移一步继续计算……网上有一副很经典的动态图，方便我们理解卷积：
 
-![](http://pic.ex2tron.top/cv2_understand_cnn.gif)
+![](http://blog.codec.wang/cv2_understand_cnn.gif)
 
 ## padding
 
@@ -28,7 +28,7 @@ $$
 
 > 事实上，原图为n×n，卷积核为f×f，最终结果图大小为(n-f+1) × (n-f+1)。
 
-![](http://pic.ex2tron.top/cv2_understand_padding.jpg)
+![](http://blog.codec.wang/cv2_understand_padding.jpg)
 
 那么扩展的这一层应该填充什么值呢？OpenCV中有好几种填充方式，都使用`cv2.copyMakeBorder()`函数实现，一起来看看。
 
@@ -55,7 +55,7 @@ cons = cv2.copyMakeBorder(img, 1, 1, 1, 1, cv2.BORDER_CONSTANT, value=0)
 print(cons)
 ```
 
-![](http://pic.ex2tron.top/cv2_zero_padding_output.jpg)
+![](http://blog.codec.wang/cv2_zero_padding_output.jpg)
 
 ### 默认边框类型
 
@@ -68,11 +68,11 @@ print(default)
 
 首先进行上下填充，填充成与原图像边界对称的值，如下图：
 
-![](http://pic.ex2tron.top/cv2_up_down_padding_first.jpg)
+![](http://blog.codec.wang/cv2_up_down_padding_first.jpg)
 
 同理再进行左右两边的填充，最后把四个顶点补充上就好了：
 
-![](http://pic.ex2tron.top/cv2_right_left_padding_second2.jpg)
+![](http://blog.codec.wang/cv2_right_left_padding_second2.jpg)
 
 > 经验之谈：一般情况下默认方式更加合理，因为边界的像素值更加接近。具体应视场合而定。
 
@@ -98,7 +98,7 @@ kernel = np.ones((3, 3), np.float32) / 10
 dst = cv2.filter2D(img, -1, kernel)
 ```
 
-![](http://pic.ex2tron.top/cv2_convolution_kernel_3_3.jpg)
+![](http://blog.codec.wang/cv2_convolution_kernel_3_3.jpg)
 
 可以看到这个核对图像进行了模糊处理，这是卷积的众多功能之一。当然卷积还有很多知识没有学到，后面我们再继续深入。
 

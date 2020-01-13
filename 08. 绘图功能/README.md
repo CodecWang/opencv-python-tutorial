@@ -1,6 +1,6 @@
 # [OpenCV-Python教程08：绘图功能](http://ex2tron.wang/opencv-python-drawing-function/)
 
-![](http://pic.ex2tron.top/cv2_drawing_functions.jpg)
+![](http://blog.codec.wang/cv2_drawing_functions.jpg)
 
 学习画线、圆和矩形等多种几何形状，给图片添加文字。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -34,7 +34,7 @@ cv2.imshow('img', img)
 cv2.waitKey(0)
 ```
 
-![绘制各种几何形状](http://pic.ex2tron.top/cv2_drawing_functions.jpg)
+![绘制各种几何形状](http://blog.codec.wang/cv2_drawing_functions.jpg)
 
 上图就是本教程绘制的最终效果，下面一步步来看：
 
@@ -139,7 +139,7 @@ cv2.putText(img, 'ex2tron', (10, 500), font,
 
 1. 你能用已学的绘图功能画出OpenCV的logo吗？(提示：椭圆和圆)
 
-![OpenCV logo](http://pic.ex2tron.top/cv2_draw_opencv_logo.jpg)
+![OpenCV logo](http://blog.codec.wang/cv2_draw_opencv_logo.jpg)
 
 ## 接口文档
 

@@ -1,6 +1,6 @@
 # ex2tron's blog:
 # http://ex2tron.wang
-# 图片和视频下载：http://pic.ex2tron.top/cv2_lane_detection_material.zip
+# 图片和视频下载：http://blog.codec.wang/cv2_lane_detection_material.zip
 
 import cv2
 import numpy as np

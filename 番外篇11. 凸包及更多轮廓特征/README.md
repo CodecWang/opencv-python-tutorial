@@ -1,6 +1,6 @@
 # [OpenCV-Python教程番外篇11：凸包及更多轮廓特征](http://ex2tron.wang/opencv-python-extra-convex-hull/)
 
-![](http://pic.ex2tron.top/cv2_understand_convex.jpg)
+![](http://blog.codec.wang/cv2_understand_convex.jpg)
 
 计算凸包及更多轮廓特征。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -30,13 +30,13 @@ cv2.polylines(image, [approx], True, (0, 255, 0), 2)
 
 其中`cv2.approxPolyDP()`的参数2(epsilon)是一个距离值，表示多边形的轮廓接近实际轮廓的程度，值越小，越精确；参数3表示是否闭合。
 
-![](http://pic.ex2tron.top/cv2_understand_approxpoly.jpg)
+![](http://blog.codec.wang/cv2_understand_approxpoly.jpg)
 
 ## 凸包
 
 [凸包](https://baike.baidu.com/item/%E5%87%B8%E5%8C%85/179150?fr=aladdin)跟多边形逼近很像，只不过它是物体最外层的"凸"多边形：集合A内连接任意两个点的直线都在A的内部，则称集合A是凸形的。如下图，红色的部分为手掌的凸包，双箭头部分表示凸缺陷(Convexity Defects)，凸缺陷常用来进行手势识别等：
 
-![](http://pic.ex2tron.top/cv2_understand_convex.jpg)
+![](http://blog.codec.wang/cv2_understand_convex.jpg)
 
 ```python
 # 1.先找到轮廓
@@ -53,7 +53,7 @@ image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
 cv2.polylines(image, [hull], True, (0, 255, 0), 2)
 ```
 
-![](http://pic.ex2tron.top/cv2_convex_hull.jpg)
+![](http://blog.codec.wang/cv2_convex_hull.jpg)
 
 其中函数`cv2.convexHull()`有个可选参数returnPoints，默认是True，代表返回角点的x/y坐标；如果为False的话，表示返回轮廓中是凸包角点的索引，比如说：
 

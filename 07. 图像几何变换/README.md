@@ -1,6 +1,6 @@
 # [OpenCV-Python教程07：图像几何变换](http://ex2tron.wang/opencv-python-image-geometric-transformation/)
 
-![](http://pic.ex2tron.top/cv2_perspective_transformations_inm.jpg)
+![](http://blog.codec.wang/cv2_perspective_transformations_inm.jpg)
 
 学习如何旋转、平移、缩放和翻转图片。<!-- more -->图片等可到[源码处](#引用)下载。
 
@@ -45,7 +45,7 @@ dst = cv2.flip(img, 1)
 
 其中，参数2 = 0：垂直翻转(沿x轴)，参数2 > 0: 水平翻转(沿y轴)，参数2 < 0: 水平垂直翻转。
 
-![](http://pic.ex2tron.top/cv2_flip_image_sample.jpg)
+![](http://blog.codec.wang/cv2_flip_image_sample.jpg)
 
 ### 平移图片
 
@@ -78,7 +78,7 @@ cv2.imshow('shift', dst)
 cv2.waitKey(0)
 ```
 
-![](http://pic.ex2tron.top/cv2_translation_100_50.jpg)
+![](http://blog.codec.wang/cv2_translation_100_50.jpg)
 
 ### 旋转图片
 
@@ -97,7 +97,7 @@ cv2.imshow('rotation', dst)
 cv2.waitKey(0)
 ```
 
-![逆时针旋转45°并缩放](http://pic.ex2tron.top/cv2_rotation_45_degree.jpg)
+![逆时针旋转45°并缩放](http://blog.codec.wang/cv2_rotation_45_degree.jpg)
 
 
 ## 小结
