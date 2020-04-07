@@ -374,7 +374,7 @@ plt.show()
 
 ## 练习
 
-1. 请复习：[Matplotlib显示图像](/opencv-python-extra-using-matplotlib/)。
+1. 请复习：[无损保存和Matplotlib使用](/%E7%95%AA%E5%A4%96%E7%AF%8702.%20%E6%97%A0%E6%8D%9F%E4%BF%9D%E5%AD%98%E5%92%8CMatplotlib%E4%BD%BF%E7%94%A8/)。
 
 ## 引用
 
