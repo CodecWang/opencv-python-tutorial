@@ -35,7 +35,7 @@ cv2.waitKey(0)
 
 - 参数1：要处理的原图，**一般是灰度图**
 - 参数2：设定的阈值
-- 参数3：最大阈值，一般为255
+- 参数3：对于`THRESH_BINARY`、`THRESH_BINARY_INV`阈值方法所选用的最大阈值，一般为255
 - 参数4：阈值的方式，主要有5种，详情：[ThresholdTypes](https://docs.opencv.org/4.0.0/d7/d1b/group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576)
 
 下面结合代码理解下这5种阈值方式：
@@ -102,7 +102,7 @@ plt.show()
 - 参数3：小区域阈值的计算方式
     - `ADAPTIVE_THRESH_MEAN_C`：小区域内取均值
     - `ADAPTIVE_THRESH_GAUSSIAN_C`：小区域内加权求和，权重是个高斯核
-- 参数4：阈值方式（跟前面讲的那5种相同）
+- 参数4：阈值方法，只能使用`THRESH_BINARY`、`THRESH_BINARY_INV`，具体见前面所讲的阈值方法
 - 参数5：小区域的面积，如11就是11*11的小块
 - 参数6：最终阈值等于小区域计算出的阈值再减去此值
 
