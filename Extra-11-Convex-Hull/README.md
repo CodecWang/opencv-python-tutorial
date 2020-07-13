@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇11：凸包及更多轮廓特征](http://ex2tron.wang/opencv-python-extra-convex-hull/)
+# [OpenCV-Python教程番外篇11：凸包及更多轮廓特征](http://codec.wang/opencv-python-extra-convex-hull/)
 
 ![](http://blog.codec.wang/cv2_understand_convex.jpg)
 

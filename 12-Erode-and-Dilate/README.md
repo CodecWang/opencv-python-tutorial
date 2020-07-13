@@ -1,4 +1,4 @@
-# [OpenCV-Python教程12：腐蚀与膨胀](http://ex2tron.wang/opencv-python-erode-and-dilate/)
+# [OpenCV-Python教程12：腐蚀与膨胀](http://codec.wang/opencv-python-erode-and-dilate/)
 
 ![](http://blog.codec.wang/cv2_understand_morphological.jpg)
 

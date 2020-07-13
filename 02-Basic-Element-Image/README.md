@@ -1,4 +1,4 @@
-# [OpenCV-Python教程02：基本元素-图片](http://ex2tron.wang/opencv-python-basic-element-image/)
+# [OpenCV-Python教程02：基本元素-图片](http://codec.wang/opencv-python-basic-element-image/)
 
 ![](http://blog.codec.wang/cv2_image_coordinate_channels.jpg)
 

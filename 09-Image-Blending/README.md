@@ -1,4 +1,4 @@
-# [OpenCV-Python教程09：图像混合](http://ex2tron.wang/opencv-python-image-blending/)
+# [OpenCV-Python教程09：图像混合](http://codec.wang/opencv-python-image-blending/)
 
 ![](http://blog.codec.wang/cv2_image_blending_6_4.jpg)
 

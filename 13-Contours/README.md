@@ -1,4 +1,4 @@
-# [OpenCV-Python教程13：轮廓](http://ex2tron.wang/opencv-python-contours/)
+# [OpenCV-Python教程13：轮廓](http://codec.wang/opencv-python-contours/)
 
 ![](http://blog.codec.wang/cv2_understand_contours.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程10：平滑图像](http://ex2tron.wang/opencv-python-smoothing-images/)
+# [OpenCV-Python教程10：平滑图像](http://codec.wang/opencv-python-smoothing-images/)
 
 ![](http://blog.codec.wang/cv2_bilateral_vs_gaussian.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程17：霍夫变换](http://ex2tron.wang/opencv-python-hough-transform/)
+# [OpenCV-Python教程17：霍夫变换](http://codec.wang/opencv-python-hough-transform/)
 
 ![](http://blog.codec.wang/cv2_understand_hough_transform.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程06：阈值分割](http://ex2tron.wang/opencv-python-image-thresholding/)
+# [OpenCV-Python教程06：阈值分割](http://codec.wang/opencv-python-image-thresholding/)
 
 ![](http://blog.codec.wang/cv2_threshold_binary_demo.jpg)
 

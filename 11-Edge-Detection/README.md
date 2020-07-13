@@ -1,4 +1,4 @@
-# [OpenCV-Python教程11：边缘检测](http://ex2tron.wang/opencv-python-edge-detection/)
+# [OpenCV-Python教程11：边缘检测](http://codec.wang/opencv-python-edge-detection/)
 
 ![](http://blog.codec.wang/cv2_canny_edge_detection_threshold.jpg)
 

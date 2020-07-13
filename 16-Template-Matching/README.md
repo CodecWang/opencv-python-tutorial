@@ -1,4 +1,4 @@
-# [OpenCV-Python教程16：模板匹配](http://ex2tron.wang/opencv-python-template-matching/)
+# [OpenCV-Python教程16：模板匹配](http://codec.wang/opencv-python-template-matching/)
 
 ![](http://blog.codec.wang/cv2_understand_template_matching.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程挑战任务：车道检测](http://ex2tron.wang/opencv-python-lane-road-detection/)
+# [OpenCV-Python教程挑战任务：车道检测](http://codec.wang/opencv-python-lane-road-detection/)
 
 ![](http://blog.codec.wang/cv2_lane_detection_result_sample.jpg)
 

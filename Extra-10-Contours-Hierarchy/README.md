@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇10：轮廓层级](http://ex2tron.wang/opencv-python-extra-contours-hierarchy/)
+# [OpenCV-Python教程番外篇10：轮廓层级](http://codec.wang/opencv-python-extra-contours-hierarchy/)
 
 ![](http://blog.codec.wang/cv2_understand_hierarchy.jpg)
 

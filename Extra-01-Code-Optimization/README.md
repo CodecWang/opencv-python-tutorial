@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇1：代码性能优化](http://ex2tron.wang/opencv-python-extra-code-optimization/)
+# [OpenCV-Python教程番外篇1：代码性能优化](http://codec.wang/opencv-python-extra-code-optimization/)
 
 学习如何评估和优化代码性能。（本节还没更新完…………）<!-- more -->
 

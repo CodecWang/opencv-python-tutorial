@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇3：滑动条](http://ex2tron.wang/opencv-python-extra-trackbar/)
+# [OpenCV-Python教程番外篇3：滑动条](http://codec.wang/opencv-python-extra-trackbar/)
 
 ![](http://blog.codec.wang/cv2_track_bar_rgb.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程03：打开摄像头](http://ex2tron.wang/opencv-python-open-camera/)
+# [OpenCV-Python教程03：打开摄像头](http://codec.wang/opencv-python-open-camera/)
 
 学习打开摄像头捕获照片、播放本地视频、录制视频等。<!-- more -->图片/视频等可到[源码处](#引用)下载。
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程拓展挑战：PyQt编写GUI界面](http://ex2tron.wang/opencv-python-using-pyqt5-create-gui/)
+# [OpenCV-Python教程拓展挑战：PyQt编写GUI界面](http://codec.wang/opencv-python-using-pyqt5-create-gui/)
 
 ![](http://blog.codec.wang/cv2_pyqt_gui_sample.jpg)
 

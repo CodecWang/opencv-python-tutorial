@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇7：亮度与对比度](http://ex2tron.wang/opencv-python-extra-contrast-brightness/)
+# [OpenCV-Python教程番外篇7：亮度与对比度](http://codec.wang/opencv-python-extra-contrast-brightness/)
 
 ![](http://blog.codec.wang/cv2_contrast_brightness.jpg)
 

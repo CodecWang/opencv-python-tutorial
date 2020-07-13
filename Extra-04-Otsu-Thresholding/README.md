@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇4：Otsu阈值法](http://ex2tron.wang/opencv-python-extra-otsu-thresholding/)
+# [OpenCV-Python教程番外篇4：Otsu阈值法](http://codec.wang/opencv-python-extra-otsu-thresholding/)
 
 ![](http://blog.codec.wang/cv2_bimodal_image_two_peaks.jpg)
 

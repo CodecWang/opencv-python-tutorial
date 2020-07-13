@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇9：图像梯度](http://ex2tron.wang/opencv-python-extra-image-gradients/)
+# [OpenCV-Python教程番外篇9：图像梯度](http://codec.wang/opencv-python-extra-image-gradients/)
 
 ![](http://blog.codec.wang/cv2_horizen_vertical_edge_detection.jpg)
 

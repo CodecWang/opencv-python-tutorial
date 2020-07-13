@@ -1,4 +1,4 @@
-# [OpenCV-Python教程07：图像几何变换](http://ex2tron.wang/opencv-python-image-geometric-transformation/)
+# [OpenCV-Python教程07：图像几何变换](http://codec.wang/opencv-python-image-geometric-transformation/)
 
 ![](http://blog.codec.wang/cv2_perspective_transformations_inm.jpg)
 

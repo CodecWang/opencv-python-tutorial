@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇6：鼠标绘图](http://ex2tron.wang/opencv-python-extra-drawing-with-mouse/)
+# [OpenCV-Python教程番外篇6：鼠标绘图](http://codec.wang/opencv-python-extra-drawing-with-mouse/)
 
 ![](http://blog.codec.wang/cv2_live_draw_rectangle.gif)
 

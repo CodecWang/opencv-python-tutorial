@@ -1,4 +1,4 @@
-# [OpenCV-Python教程08：绘图功能](http://ex2tron.wang/opencv-python-drawing-function/)
+# [OpenCV-Python教程08：绘图功能](http://codec.wang/opencv-python-drawing-function/)
 
 ![](http://blog.codec.wang/cv2_drawing_functions.jpg)
 

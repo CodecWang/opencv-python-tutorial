@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇8：卷积基础(图片边框)](http://ex2tron.wang/opencv-python-extra-padding-and-convolution/)
+# [OpenCV-Python教程番外篇8：卷积基础(图片边框)](http://codec.wang/opencv-python-extra-padding-and-convolution/)
 
 ![](http://blog.codec.wang/cv2_understand_padding.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程04：图像基本操作](http://ex2tron.wang/opencv-python-basic-operations/)
+# [OpenCV-Python教程04：图像基本操作](http://codec.wang/opencv-python-basic-operations/)
 
 ![](http://blog.codec.wang/cv2_lena_face_roi_crop.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程05：颜色空间转换](http://ex2tron.wang/opencv-python-changing-colorspaces/)
+# [OpenCV-Python教程05：颜色空间转换](http://codec.wang/opencv-python-changing-colorspaces/)
 
 ![](http://blog.codec.wang/cv2_exercise_tracking_three_colors.jpg)
 

@@ -1,4 +1,4 @@
-# [OpenCV-Python教程挑战任务：画动态时钟](http://ex2tron.wang/opencv-python-clock-drawing/)
+# [OpenCV-Python教程挑战任务：画动态时钟](http://codec.wang/opencv-python-clock-drawing/)
  
 ![](http://blog.codec.wang/cv2_draw_clock_dynamic_sample.gif)
 

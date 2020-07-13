@@ -1,4 +1,4 @@
-# [OpenCV-Python教程14：轮廓特征](http://ex2tron.wang/opencv-python-contour-features/)
+# [OpenCV-Python教程14：轮廓特征](http://codec.wang/opencv-python-contour-features/)
 
 ![](http://blog.codec.wang/cv2_min_rect_rect_bounding.jpg)
 

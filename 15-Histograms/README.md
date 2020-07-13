@@ -1,4 +1,4 @@
-# [OpenCV-Python教程15：直方图](http://ex2tron.wang/opencv-python-histograms/)
+# [OpenCV-Python教程15：直方图](http://codec.wang/opencv-python-histograms/)
 
 ![](http://blog.codec.wang/cv2_understand_histogram.jpg)
 

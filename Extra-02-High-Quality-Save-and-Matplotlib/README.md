@@ -1,4 +1,4 @@
-# [OpenCV-Python教程番外篇2：无损保存和Matplotlib使用](http://ex2tron.wang/opencv-python-extra-high-quality-save-and-using-matplotlib/)
+# [OpenCV-Python教程番外篇2：无损保存和Matplotlib使用](http://codec.wang/opencv-python-extra-high-quality-save-and-using-matplotlib/)
  
 ![](http://blog.codec.wang/cv2_matplotlib_show_gray_image.jpg)
 
