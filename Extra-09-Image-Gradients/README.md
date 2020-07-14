@@ -46,7 +46,7 @@ $$
 
 ![垂直和水平边缘提取](http://blog.codec.wang/cv2_horizen_vertical_edge_detection.jpg)
 
-> 还记得滤波函数`cv2.filter2D()`吗？（[番外篇：卷积基础](/opencv-python-extra-padding-and-convolution/)）我们来手动实现上面的功能：
+> 还记得滤波函数`cv2.filter2D()`吗？（[番外篇：卷积基础](/Extra-08-Padding-and-Convolution/)）我们来手动实现上面的功能：
 
 ```python
 img = cv2.imread('sudoku.jpg', 0)

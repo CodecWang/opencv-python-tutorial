@@ -15,7 +15,7 @@
 
 ### 滤波与模糊
 
-> 推荐大家先阅读：[番外篇：卷积基础(图片边框)](/opencv-python-extra-padding-and-convolution/)，有助于理解卷积和滤波的概念。
+> 推荐大家先阅读：[番外篇：卷积基础(图片边框)](/Extra-08-Padding-and-Convolution/)，有助于理解卷积和滤波的概念。
 
 关于滤波和模糊，很多人分不清，我来给大家理理（虽说如此，我后面也会混着用,,ԾㅂԾ,,）：
 
@@ -45,7 +45,7 @@ img = cv2.imread('lena.jpg')
 blur = cv2.blur(img, (3, 3))  # 均值模糊
 ```
 
-> 所有的滤波函数都有一个可选参数borderType，这个参数就是[番外篇：卷积基础(图片边框)](/opencv-python-extra-padding-and-convolution/)中所说的边框填充方式。
+> 所有的滤波函数都有一个可选参数borderType，这个参数就是[番外篇：卷积基础(图片边框)](/Extra-08-Padding-and-Convolution/)中所说的边框填充方式。
 
 ### 方框滤波
 

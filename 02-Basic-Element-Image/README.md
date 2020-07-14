@@ -87,7 +87,7 @@ Nice，是不是很简单呐，再接再厉噢(●'◡'●)
 
 1. 打开lena.jpg并显示，如果按下's'，就保存图片为'lena_save.bmp'，否则就结束程序。
 
-2. Matplotlib是Python中常用的一个绘图库，请学习[番外篇：无损保存和Matplotlib使用](/opencv-python-extra-high-quality-save-and-using-matplotlib/)。
+2. Matplotlib是Python中常用的一个绘图库，请学习[番外篇：无损保存和Matplotlib使用](/Extra-02-High-Quality-Save-and-Matplotlib/)。
 
 ## 接口文档
 

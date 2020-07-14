@@ -57,7 +57,7 @@ hist = cv2.calcHist([img], [0], None, [256], [0, 256])  # 性能：0.025288 s
 hist, bins = np.histogram(img.ravel(), 256, [0, 256])  # 性能：0.020628 s
 ```
 
-> 经验之谈：Numpy中还有一种更高效的方式：（还记得怎么评估性能吗：[番外篇：代码性能优化](/opencv-python-extra-code-optimization/)）
+> 经验之谈：Numpy中还有一种更高效的方式：（还记得怎么评估性能吗：[番外篇：代码性能优化](/Extra-01-Code-Optimization/)）
 
 ```python
 hist = np.bincount(img.ravel(), minlength=256)  # 性能：0.003163 s

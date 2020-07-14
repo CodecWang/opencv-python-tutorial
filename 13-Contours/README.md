@@ -47,7 +47,7 @@ print(len(contours))  # 结果应该为2
 - 参数3：轮廓的近似方法。比如对于一条直线，我们可以存储该直线的所有像素点，也可以只存储起点和终点。使用cv2.CHAIN_APPROX_SIMPLE就表示用尽可能少的像素点表示轮廓。更多请参考：[ContourApproximationModes](https://docs.opencv.org/4.0.0/d3/dc0/group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff)
 - 简便起见，这两个参数也可以直接用真值3和2表示。
 
-函数有3个返回值，image还是原来的二值化图片，hierarchy是轮廓间的层级关系（[番外篇：轮廓层级](/opencv-python-extra-contours-hierarchy/)），这两个暂时不用理会。我们主要看contours，它就是找到的轮廓了，以数组形式存储，记录了每条轮廓的所有像素点的坐标(x,y)。
+函数有3个返回值，image还是原来的二值化图片，hierarchy是轮廓间的层级关系（[番外篇：轮廓层级](/Extra-10-Contours-Hierarchy/)），这两个暂时不用理会。我们主要看contours，它就是找到的轮廓了，以数组形式存储，记录了每条轮廓的所有像素点的坐标(x,y)。
 
 ![](http://blog.codec.wang/cv2_find_contours_contours.jpg)
 

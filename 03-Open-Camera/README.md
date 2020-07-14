@@ -105,7 +105,7 @@ while(capture.isOpened()):
 
 ## 练习
 
-1. 请先阅读[番外篇：滑动条](/opencv-python-extra-trackbar/)，然后实现一个可以拖动滑块播放视频的功能。（提示：需要用到 `cv2.CAP_PROP_FRAME_COUNT`和`cv2.CAP_PROP_POS_FRAMES`两个属性）。
+1. 请先阅读[番外篇：滑动条](/Extra-03-Trackbar/)，然后实现一个可以拖动滑块播放视频的功能。（提示：需要用到 `cv2.CAP_PROP_FRAME_COUNT`和`cv2.CAP_PROP_POS_FRAMES`两个属性）。
 
 ## 接口文档
 

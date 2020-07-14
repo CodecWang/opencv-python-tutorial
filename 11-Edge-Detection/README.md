@@ -32,7 +32,7 @@ cv2.waitKey(0)
 
 `cv2.Canny()`进行边缘检测，参数2、3表示最低、高阈值，下面来解释下具体原理。
 
-> 经验之谈：之前我们用低通滤波的方式模糊了图片，那反过来，想得到物体的边缘，就需要用到高通滤波。推荐先阅读：[番外篇：图像梯度](/opencv-python-extra-image-gradients/)。
+> 经验之谈：之前我们用低通滤波的方式模糊了图片，那反过来，想得到物体的边缘，就需要用到高通滤波。推荐先阅读：[番外篇：图像梯度](/Extra-09-Image-Gradients/)。
 
 ### Canny边缘检测
 
@@ -92,7 +92,7 @@ cv2.imshow('canny', np.hstack((img, thresh, edges)))
 cv2.waitKey(0)
 ```
 
-代码中我用了[番外篇：Otsu阈值法](/opencv-python-extra-otsu-thresholding/)中的自动阈值分割，如果你不太了解，大可以使用传统的方法，不过如果是下面这种图片，推荐用Otsu阈值法。另外Python中某个值不用的话，就写个下划线'_'。
+代码中我用了[番外篇：Otsu阈值法](/Extra-04-Otsu-Thresholding/)中的自动阈值分割，如果你不太了解，大可以使用传统的方法，不过如果是下面这种图片，推荐用Otsu阈值法。另外Python中某个值不用的话，就写个下划线'_'。
 
 ![](http://blog.codec.wang/cv2_canny_edge_detection_threshold.jpg)
 

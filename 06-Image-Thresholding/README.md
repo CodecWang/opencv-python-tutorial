@@ -121,7 +121,7 @@ plt.show()
 
 ## 练习
 
-1. Otsu阈值是一种高效的二值化算法，请阅读[番外篇：Otsu阈值法](/opencv-python-extra-otsu-thresholding/)
+1. Otsu阈值是一种高效的二值化算法，请阅读[番外篇：Otsu阈值法](/Extra-04-Otsu-Thresholding/)
 
 ## 接口文档
 
