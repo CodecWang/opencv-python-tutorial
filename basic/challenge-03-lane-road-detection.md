@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_lane_detection_result_sample.jpg)
 
-挑战任务：实际公路的车道线检测。图片等可到[源码处]()下载。
+挑战任务：实际公路的车道线检测。图片等可到文末引用处下载。
 
 ## 挑战内容
 

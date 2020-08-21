@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_understand_contours.jpg)
 
-学习如何寻找并绘制轮廓。图片等可到[源码处]()下载。
+学习如何寻找并绘制轮廓。图片等可到文末引用处下载。
 
 ## 目标
 

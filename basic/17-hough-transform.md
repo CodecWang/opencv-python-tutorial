@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_understand_hough_transform.jpg)
 
-学习使用霍夫变换识别出图像中的直线和圆。图片等可到[源码处]()下载。
+学习使用霍夫变换识别出图像中的直线和圆。图片等可到文末引用处下载。
 
 ## 目标
 

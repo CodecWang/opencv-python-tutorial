@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_perspective_transformations_inm.jpg)
 
-学习如何旋转、平移、缩放和翻转图片。图片等可到[源码处]()下载。
+学习如何旋转、平移、缩放和翻转图片。图片等可到文末引用处下载。
 
 ## 目标
 

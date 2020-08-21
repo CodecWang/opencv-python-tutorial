@@ -2,9 +2,9 @@
 
 ![](http://blog.codec.wang/cv2_horizen_vertical_edge_detection.jpg)
 
-了解图像梯度和边缘检测的相关概念。图片等可到[源码处]()下载。
+了解图像梯度和边缘检测的相关概念。图片等可到文末引用处下载。
 
-还记得前面[平滑图像](/opencv-python-smoothing-images/)中提到的滤波与模糊的区别吗？我们说低通滤波器是模糊，高通滤波器是锐化，这节我们就来看看高通滤波器。
+还记得前面[平滑图像](https://opencv.codec.wang/basic/10-smoothing-images)中提到的滤波与模糊的区别吗？我们说低通滤波器是模糊，高通滤波器是锐化，这节我们就来看看高通滤波器。
 
 ## [图像梯度](https://baike.baidu.com/item/图像梯度/8528837?fr=aladdin)
 
@@ -44,7 +44,7 @@ $$
 
 ![&#x5782;&#x76F4;&#x548C;&#x6C34;&#x5E73;&#x8FB9;&#x7F18;&#x63D0;&#x53D6;](http://blog.codec.wang/cv2_horizen_vertical_edge_detection.jpg)
 
-> 还记得滤波函数`cv2.filter2D()`吗？（[番外篇：卷积基础](/Extra-08-Padding-and-Convolution/)）我们来手动实现上面的功能：
+> 还记得滤波函数`cv2.filter2D()`吗？（[番外篇：卷积基础](https://opencv.codec.wang/basic/extra-08-padding-and-convolution)）我们来手动实现上面的功能：
 
 ```python
 img = cv2.imread('sudoku.jpg', 0)
@@ -63,7 +63,7 @@ cv2.waitKey(0)
 
 ### Sobel算子
 
-上面的这种差分方法就叫[Sobel算子](https://baike.baidu.com/item/Sobel%E7%AE%97%E5%AD%90/11000092?fr=aladdin)，它先在垂直方向计算梯度$ G\_x=k\_1×src $，再在水平方向计算梯度$ G\_y=k\_2×src $，最后求出总梯度：\\(G=\sqrt{Gx^2+Gy^2}\\)
+上面的这种差分方法就叫[Sobel算子](https://baike.baidu.com/item/Sobel%E7%AE%97%E5%AD%90/11000092?fr=aladdin)，它先在垂直方向计算梯度 $$G_x=k_1×src$$，再在水平方向计算梯度 $$G_y=k_2×src$$ ，最后求出总梯度： $$G=\sqrt{Gx^2+Gy^2}$$
 
 我们可以把前面的代码用Sobel算子更简单地实现：
 
@@ -98,11 +98,15 @@ K = \left[
   \right]
 $$
 
-这些算法都是一阶边缘检测的代表，网上也有算子之间的对比资料，有兴趣的可参考[引用]()。
+这些算法都是一阶边缘检测的代表，网上也有算子之间的对比资料，有兴趣的可参考文末引用。
 
-### \[Laplacian算子\]\(\([https://baike.baidu.com/item/Laplacian%E7%AE%97%E5%AD%90](https://baike.baidu.com/item/Laplacian%E7%AE%97%E5%AD%90)\)
+### Laplacian算子
 
-高数中用一阶导数求极值，在这些极值的地方，二阶导数为0，所以也可以通过求二阶导计算梯度：$ dst=\frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2} $
+高数中用一阶导数求极值，在这些极值的地方，二阶导数为0，所以也可以通过求二阶导计算梯度：
+
+$$
+dst=\frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2}
+$$
 
 一维的一阶和二阶差分公式分别为：
 

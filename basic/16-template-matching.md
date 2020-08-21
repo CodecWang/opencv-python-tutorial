@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_understand_template_matching.jpg)
 
-学习使用模板匹配在图像中寻找物体。图片等可到[源码处]()下载。
+学习使用模板匹配在图像中寻找物体。图片等可到文末引用处下载。
 
 ## 目标
 

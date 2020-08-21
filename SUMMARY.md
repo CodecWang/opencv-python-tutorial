@@ -5,7 +5,7 @@
 ## 入门篇 <a id="start"></a>
 
 * [01: 简介与安装](start/01-introduction-and-installation.md)
-* [02: 基本元素: 图片](start/02-basic-element-image.md)
+* [02: 基本元素-图片](start/02-basic-element-image.md)
 * [03: 打开摄像头](start/03-open-camera.md)
 * [04: 图像基本操作](start/04-basic-operations.md)
 * [05: 颜色空间转换](start/05-changing-colorspaces.md)

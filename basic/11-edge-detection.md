@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_canny_edge_detection_threshold.jpg)
 
-学习使用Canny获取图像的边缘。图片等可到[源码处]()下载。
+学习使用Canny获取图像的边缘。图片等可到文末引用处下载。
 
 > [Canny J . A Computational Approach To Edge Detection\[J\]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 1986, PAMI-8\(6\):679-698.](https://www.computer.org/cms/Computer.org/Transactions%20Home%20Pages/TPAMI/PDFs/top_ten_6.pdf)
 

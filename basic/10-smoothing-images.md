@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_bilateral_vs_gaussian.jpg)
 
-学习模糊/平滑图像，消除噪点。图片等可到[源码处]()下载。
+学习模糊/平滑图像，消除噪点。图片等可到文末引用处下载。
 
 ## 目标
 

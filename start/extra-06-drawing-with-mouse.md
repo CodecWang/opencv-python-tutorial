@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_live_draw_rectangle.gif)
 
-学习如何用鼠标实时绘图。图片等可到[源码处]()下载。
+学习如何用鼠标实时绘图。图片等可到文末引用处下载。
 
 ## 目标
 

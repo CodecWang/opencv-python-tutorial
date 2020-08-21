@@ -2,7 +2,7 @@
 
 ![](http://blog.codec.wang/cv2_understand_hierarchy.jpg)
 
-了解轮廓间的层级关系。图片等可到[源码处]()下载。
+了解轮廓间的层级关系。图片等可到文末引用处[文末引用出]()下载。
 
 前面我们使用`cv2.findContours()`寻找轮廓时，参数3表示轮廓的寻找方式\(RetrievalModes\)，当时我们传入的是cv2.RETR\_TREE，它表示什么意思呢？另外，函数返回值hierarchy有什么用途呢？下面我们就来研究下这两个问题。
 
