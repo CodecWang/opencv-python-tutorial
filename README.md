@@ -45,7 +45,7 @@
 | [霍夫变换](https://opencv.codec.wang/basic/17-hough-transform) | 提取直线/圆 |
 | [挑战任务: 车道检测](https://opencv.codec.wang/basic/challenge-03-lane-road-detection) | / |
 
-> 如果您觉得写的不错的话，欢迎打赏，我会写出更好的内容！✊
+> 如果您觉得写的不错的话，欢迎打赏，我会努力写出更好的内容！✊🤟
 
 ![](.gitbook/assets/wechat_alipay_pay_pic.png)
 
