@@ -4,7 +4,8 @@ import cv2
 start = cv2.getTickCount()
 
 # 读入一张图片
-img = cv2.imread('lena.jpg')
+# You should use Flag here so that it will read colored or grey 
+img = cv2.imread('lena.jpg', 0)
 
 # 停止计时
 end = cv2.getTickCount()
