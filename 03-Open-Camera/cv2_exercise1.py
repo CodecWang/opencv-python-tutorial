@@ -1,10 +1,7 @@
 import cv2
 
-
 def track_back(x):
-    '''
     ### 回调函数，x表示滑块的位置
-    '''
     # 更改视频的帧位置
     capture.set(cv2.CAP_PROP_POS_FRAMES, x)
 
