@@ -1,0 +1,8 @@
+{
+  "label": "入门篇",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "安装并了解 OpenCV-Python 的基本使用方法"
+  }
+}

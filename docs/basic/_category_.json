@@ -1,0 +1,8 @@
+{
+  "label": "基础篇",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "学习 OpenCV-Python 在常见图像处理算法中的实践"
+  }
+}
